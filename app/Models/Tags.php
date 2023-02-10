@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Jeu extends Model
+class Tags extends Model
 {
     use HasFactory;
-    protected $table = "jeux";
+    protected $table = "tags";
     protected $primaryKey = "id";
-    protected $fillable = array('titre');
+    protected $fillable = array('nom');
     
     public $timestamps = false;
 }

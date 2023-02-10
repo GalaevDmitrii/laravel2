@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Modifier') }}
+            {{ __('Les categories') }}
         </h2>
     </x-slot>
 
@@ -10,15 +10,14 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 
-
-                    <h1>Modifier le jeu</h1>
-
-
-                    <h2>Titre : {{$jeu->titre}}</h2>
-                    <form action="edit.blade.php" method="Post">
-                        <x-text-input placeholder="Noveau titre" name="new-titre">Noveau titre</x-text-input>
-                        <input type="submit" value="update">
+                    <form action="">
+                        <label for="new-game">Titre de nouvelle jeu:</label>
+                        <input type="text" placeholder="Titre" name="new-game">
+                        <label for="new-description">Votre description:</label>
+                        <input type="text" placeholder="Description" name="new-description">
+                        <x-secondary-button>Submit</x-secondary-button>
                     </form>
+
                    
 
 

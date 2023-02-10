@@ -11,10 +11,10 @@
                 <div class="p-6 text-gray-900">
 
 
-                    <h1>Modifier le jeu</h1>
+                    <h1>Modifier le tag</h1>
 
 
-                    <h2>Titre : {{$jeu->titre}}</h2>
+                    <h2>Titre : {{$tag->nom}}</h2>
                     <form action="edit.blade.php" method="Post">
                         <x-text-input placeholder="Noveau titre" name="new-titre">Noveau titre</x-text-input>
                         <input type="submit" value="update">
